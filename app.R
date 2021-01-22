@@ -11,7 +11,7 @@ source("Name.R") # For selecting vessel name
 # User Interface (UI)
 ui <- semanticPage(
   TypeUI("type", Data),
-  NameUI(Data)
+  NameUI("name", Data)
 )
 
 # Server
