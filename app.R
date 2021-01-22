@@ -4,7 +4,7 @@ library(shiny.semantic) # For advance UI options
 library(tidyverse) # For data manipulation and analysis
 
 # Sourcing external R scripts
-source("data.R") # For loading data
+source("load_data.R") # For loading data
 source("vessel.R") # For selecting vessel type and name
 
 # User Interface (UI)
