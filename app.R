@@ -5,9 +5,9 @@ library(tidyverse) # For data manipulation and analysis
 library(geosphere) # For calculating distance between coordinates
 
 # Sourcing external R scripts
-source("load_data.R") # For loading data
-source("vessel.R") # For executing shiny module to select vessel type and name
-source("distance.R") # For calculating the distance traveled by a vessel
+source("external/load_data.R") # For loading data
+source("modules/vessel.R") # For executing shiny module to select vessel type and name
+source("modules/distance.R") # For calculating the distance traveled by a vessel
 
 # User Interface (UI)
 ui <- semanticPage(
