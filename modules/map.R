@@ -1,7 +1,10 @@
 # Map module's User Interface (UI)
 MapUI <- function(id) {
-  tagList(
-    leafletOutput(outputId = NS(id, "Map"))
+  fluidRow(
+    box(
+      width = 12, ribbon = T, collapsible = F, title_side = "top left",
+      title = "MAP", leafletOutput(outputId = NS(id, "Map"))
+    )
   )
 }
 
@@ -38,7 +41,7 @@ MapServer <- function(input, output, session, data, info, polygons) {
         # Marker for end location
         addAwesomeMarkers(~End_LON, ~End_LAT, icon = icons, label = "End") %>%
         # Adding bounds for better visibility of desired location
-        setMaxBounds(lng1 = Start_LON + 10, lat1 = Start_LAT + 10, lng2 = End_LON - 10, lat2 = End_LAT - 10) %>%
+        setMaxBounds(lng1 = Start_LON + 20, lat1 = Start_LAT + 20, lng2 = End_LON - 20, lat2 = End_LAT - 20) %>%
         addProviderTiles("CartoDB.VoyagerLabelsUnder")
     })
   })
