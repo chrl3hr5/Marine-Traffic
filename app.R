@@ -24,13 +24,13 @@ layout <- grid_template(default = list(
     c("top_left", "top_right"),
     c("top_left", "bottom_right")
   ),
-  rows_height = c("10%", "60%", "10%"),
   cols_width = c("70%", "30%")
 ))
 
 # User Interface (UI)
 ui <- semanticPage(
   box(
+    title = "Marine Traffic", color = "blue", collapsible = F, ribbon = F, title_side = "top left",
     grid(layout,
       # Executing UI from "Total Distance" module
       top = Total_DistanceUI("distance"),

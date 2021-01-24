@@ -29,25 +29,25 @@ Total_DistanceServer <- function(input, output, session, data, info) {
     # Total length of the vessel (in meters)
     output$Length <- render_value_box({
       valueBox(
-        value = unique(Temp$LENGTH), subtitle = "Length of the vessel (in meters)"
+        size = "small", color = "blue", value = unique(Temp$LENGTH), subtitle = "Length (in meters)"
       )
     })
     # Total width of the vessel (in meters)
     output$Width <- render_value_box({
       valueBox(
-        value = unique(Temp$WIDTH), subtitle = "Width of the vessel (in meters)"
+        size = "small", color = "yellow", value = unique(Temp$WIDTH), subtitle = "Width (in meters)"
       )
     })
     # Total deadweight of the vessel (in tonnes)
     output$Deadweight <- render_value_box({
       valueBox(
-        value = unique(Temp$DWT), subtitle = "Deadweight of the vessel (in tonnes)"
+        size = "small", color = "red", value = unique(Temp$DWT), subtitle = "Deadweight (in tonnes)"
       )
     })
     # Total distance traveled (in meters)
     output$Distance <- render_value_box({
       valueBox(
-        value = round(sum(Travel)), subtitle = "Total distance traveled (in meters)"
+        size = "small", color = "green", value = round(sum(Travel)), subtitle = "Total distance traveled (in meters)"
       )
     })
   })

@@ -2,6 +2,7 @@
 Longest_DistanceUI <- function(id) {
   fluidRow(
     box(
+      color = "green",
       width = 12, ribbon = T, title = "NOTE",
       title_side = "top right", collapsible = F,
       textOutput(outputId = NS(id, "Observation"))

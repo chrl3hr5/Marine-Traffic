@@ -2,6 +2,7 @@
 MapUI <- function(id) {
   fluidRow(
     box(
+      color = "blue",
       width = 12, ribbon = T, collapsible = F, title_side = "top left",
       title = "MAP", leafletOutput(outputId = NS(id, "Map"))
     )
