@@ -4,6 +4,8 @@
 A shiny web application for analyzing marine data involving the travel
 history of various vessels (ships) and other relevant information.
 
+<img src="figures/App.png" align="center" />
+
 <i> The app includes the following sections - </i>
 
 <b> Value Boxes </b> - The app contains four value boxes on the top for

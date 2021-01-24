@@ -10,6 +10,8 @@ knitr::opts_chunk$set(echo = TRUE)
 
 A shiny web application for analyzing marine data involving the travel history of various vessels (ships) and other relevant information.
 
+<img src="figures/App.png" align="center" />
+
 <i> The app includes the following sections - </i>
 
 <b> Value Boxes </b> - The app contains four value boxes on the top for displaying the values associated with vessel's length (in meters), width (in meters), deadweight (in tonnes) and total distance traveled (in meters).
