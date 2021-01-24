@@ -1,5 +1,5 @@
 # Distance module's User Interface (UI)
-DistanceUI <- function(id) {
+Total_DistanceUI <- function(id) {
   tagList(
     textOutput(outputId = NS(id, "Distance")),
     textOutput(outputId = NS(id, "Observation"))
@@ -7,7 +7,7 @@ DistanceUI <- function(id) {
 }
 
 # Distance module's Server
-DistanceServer <- function(input, output, session, data, info) {
+Total_DistanceServer <- function(input, output, session, data, info) {
   observe({
     # Filtering data on the basis of vessel type and name
     Temp <- data %>% filter(ship_type == info$Type() & SHIPNAME == info$Name())
