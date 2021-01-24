@@ -1,5 +1,5 @@
 
-# [Marine Traffic](https://github.com/chrl3hr5/Marine-Traffic)
+# [Marine Traffic](https://aidigvijay.shinyapps.io/Marine_Traffic/)
 
 A shiny web application for analyzing marine data involving the travel
 history of various vessels (ships) and other relevant information.
