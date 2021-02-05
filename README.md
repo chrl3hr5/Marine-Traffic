@@ -1,5 +1,5 @@
 
-# [Marine Traffic](https://aidigvijay.shinyapps.io/Marine_Traffic/)
+# [Marine Traffic](https://aidigvijay.shinyapps.io/Marine_Traffic/) <img src="figures/Marine Traffic.png" align="right" width="120" />
 
 A shiny web application for analyzing marine data involving the travel
 history of various vessels (ships) and other relevant information.
